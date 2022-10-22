@@ -48,7 +48,7 @@ jobs:
           sudo apt install nodejs && sudo apt install npm
       - name: Install NPM packages
         run: |
-          cd themes/docsy && npm install && cd ../..
+          cd themes/docsy && npm install && npm install postcss-cli && cd ../..
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
