@@ -43,6 +43,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - name: Install NPM
+        run: |
+          sudo apt install nodejs && sudo apt install npm
+      - name: Install NPM packages
+        run: |
+          cd themes/docsy && npm install && cd ../..
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
