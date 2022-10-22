@@ -1,0 +1,4 @@
+baseURL = 'https://sundi0331.github.io/HelloHugo/'
+languageCode = 'en-us'
+title = 'Hello Hugo!'
+theme = "docsy"
