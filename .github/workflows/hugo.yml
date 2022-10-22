@@ -48,7 +48,7 @@ jobs:
           sudo apt install nodejs && sudo apt install npm
       - name: Install NPM packages
         run: |
-          cd themes/docsy && npm install && cd ../.. && npm install postcss-cli
+          cd themes/docsy && npm install && cd ../.. && npm install postcss-cli autoprefixer
       - name: Debug Hugo Version
         run: |
           hugo version
